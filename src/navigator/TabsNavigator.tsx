@@ -26,7 +26,7 @@ const TabsAndroidNavigator = () =>  {
         let iconName: string = '';
         switch (route.name){
             case 'Tab1Screen':
-                iconName='Home'
+                iconName='home'
             break;
             case 'TabTopNavigator':
                 iconName='bandcamp'
