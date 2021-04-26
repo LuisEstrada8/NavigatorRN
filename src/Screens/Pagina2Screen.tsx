@@ -4,6 +4,7 @@ import { StackScreenProps } from '@react-navigation/stack';
 import { styles } from '../theme/appTheme';
 import { useNavigation } from '@react-navigation/core';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 
 export const Pagina2Screen = () => {
@@ -22,7 +23,7 @@ export const Pagina2Screen = () => {
             <Text style={styles.titulo}>Pagina 2</Text>
 
             <Button
-        title='ir pagina 3'
+        title='ir pagina 3' 
         onPress={()=> navigation.navigate('Pagina3Screen')}
         />
 
@@ -44,7 +45,7 @@ export const Pagina2Screen = () => {
        })}
        >
            <View>
-        <Text  style={styles.btnEspacioText}>Pedro</Text>
+        <Text  style={styles.btnEspacioText}><Icon name="mars" size={80} color="white" /></Text>
            </View>
        </TouchableOpacity>
 
@@ -56,7 +57,7 @@ export const Pagina2Screen = () => {
        })}
         >
            <View>
-        <Text  style={styles.btnEspacioText}>Maria</Text>
+        <Text  style={styles.btnEspacioText}><Icon name="venus" size={80} color="white" /></Text>
            </View>
        </TouchableOpacity>
 
