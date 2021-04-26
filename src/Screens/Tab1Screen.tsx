@@ -3,6 +3,7 @@ import { View, Text } from 'react-native';
 import { styles } from '../theme/appTheme';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { TouchableIcon } from '../Components/TouchableIcon';
 export const Tab1Screen = () => {
 
     useEffect(() => {
@@ -17,13 +18,13 @@ export const Tab1Screen = () => {
             <Text style={styles.titulo}>Iconos</Text>
         
             <Text>
-            <Icon name="rocket" size={80} color="#900" />
-            <Icon name="ad" size={80} color="#D3D5D7" />   
-            <Icon name="airbnb" size={80} color="#119DA4" />   
-            <Icon name="biohazard" size={80} color="#F5BB00" />    
-            <Icon name="fort-awesome-alt" size={80} color="#900" />
-            <Icon name="bity" size={80} color="#80DED9" />
-            <Icon name="bitcoin" size={80} color="#F5BB00" />
+            <TouchableIcon iconColor="#119DA4" iconName="rocket"/>
+            <TouchableIcon iconColor="#0C7489" iconName="ad"/>   
+            <TouchableIcon iconColor="#13505B" iconName="airbnb"/>   
+            <TouchableIcon iconColor="#65532F" iconName="biohazard"/>    
+            <TouchableIcon iconColor="#F19953" iconName="fort-awesome-alt"/>
+            <TouchableIcon iconColor="#C47335" iconName="bity"/>
+            <TouchableIcon iconColor="#F9A620" iconName="bitcoin"/>
             </Text>
         </View>
     )

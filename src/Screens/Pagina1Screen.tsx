@@ -11,7 +11,7 @@ interface Props extends DrawerScreenProps<any, any>{};
 
 export const Pagina1Screen = ( {navigation}: Props ) => {
     
-    useEffect(() => {
+    useEffect(() => {5
 
         navigation.setOptions({
             headerLeft: () => (
